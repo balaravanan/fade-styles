@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Session from './Session';
+import React from 'react'
+import './fade-in-image.css';
+import './fadeInBottom.css';
+import './fadeInLeft.css';
+import './fadeinright.css';
+import Upload from '../../integrated/src/Upload';
 
 function App() {
+    // add_hooks("id name", "Classname", false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     {/* <Session/> */}
+<Upload/>
     </div>
   );
 }

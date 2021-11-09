@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.groove {border-style: groove;}
+
+.fade-in-image{
+  -webkit-animation: fadeIn 5s;
+  animation: fadeIn 5s;
+  text-align: -webkit-center;
+}
+
+.in-left{
+       -o-animation-name: fadeInLeft; 
+     animation-name: fadeInLeft; 
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInLeft{
+
+  from 0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to 100% {
+    opacity: 1;
+  }
+}
+
+.fadeinright {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInRight{
+  from 0% {
+    opacity: 0;
+    transform: translateX(300px);
+}
+to 100% {
+  opacity: 1;
+}
+}
